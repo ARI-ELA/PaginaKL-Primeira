@@ -1,0 +1,277 @@
+/*--geral--*/
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Montserrat', sans-serif;
+  color: #464444;
+}
+
+body {
+  background-image: linear-gradient(225deg, #304352, #bdc3c7, #536976);
+  background-repeat: no-repeat;
+  width: 100%;
+}
+
+.rom {
+  --bs-gutter-x: 0;
+}
+
+
+/*--cabeçalho--*/
+#cabecalho {
+  position: fixed;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 1;
+  width: 100%;
+  background-color: rgba(51, 51, 51, 0.95);
+  overflow: hidden;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+  padding: 10px 100px;
+}
+
+#lg {
+  border-radius: 5px;
+}
+
+h3,
+h6 {
+  color: white;
+  text-align: center;
+}
+
+/*--menu navegação--*/
+li {
+  display: inline-block;
+  list-style-type: none;
+  padding: 5px;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+}
+
+ul li a {
+  color: white;
+  text-decoration: none;
+  font-size: 12px;
+}
+
+li a:hover {
+  background-color: rgb(17, 17, 17, );
+  color: rgb(85, 85, 248);
+
+}
+
+/*--titulos--*/
+.titulo {
+  padding-bottom: 25px;
+  color: rgb(34, 33, 33);
+
+}
+
+.title {
+  padding-bottom: 25px;
+  width: 65%;
+  color: rgb(34, 33, 33);
+  padding-left: 10%;
+}
+
+h1 {
+  text-transform: uppercase;
+  font-size: 36px;
+  letter-spacing: 2px;
+}
+
+h5 {
+  letter-spacing: 2px;
+  font-style: italic;
+  letter-spacing: 2px;
+  padding-top: 40px;
+  margin-top: 40px;
+}
+
+/*--empresa--*/
+#empresa {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+  text-align: justify;
+  padding-bottom: 30px;
+  line-height: 1.8;
+  font-size: 18px;
+}
+
+#text {
+  max-width: 600px;
+  padding-left: 30px;
+  padding-right: 30px;
+}
+
+.img {
+  max-width: 600px;
+  padding-top: 30px;
+}
+
+span {
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+/*--portfolio--*/
+#portfolio {
+  padding-top: 70px;
+  padding-bottom: 30px;
+}
+
+/*--marcas--*/
+.container {
+  max-width: 100%;
+  margin-left: 0;
+  margin-right: 0;
+  padding-left: 0;
+  padding-right: 0;
+}
+
+.imagens {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  /*quebrar linha*/
+  width: 100%;
+  background-color: white;
+}
+
+.fotos {
+  width: 25%;
+  height: 25%;
+  text-align: center;
+  position: relative;
+}
+
+image {
+  position: absolute;
+}
+
+.label-fotos {
+  position: absolute;
+  padding-top: 30px;
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  font-family: inherit;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold;
+  cursor: pointer;
+  color: transparent;
+  transition: 0.4s;
+}
+.label-fotos:hover {
+  position: absolute;
+  padding-top: 30px;
+  color: rgb(147, 141, 141);
+  margin: auto;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  text-align: center;
+  font-family: 'Poppins', sans-serif;
+  text-transform: uppercase;
+  font-size: 36px;
+  font-weight: bold;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.row {
+  margin: 0;
+}
+
+/*--rodape--*/
+#contatos {
+  padding: 50px 10%;
+  padding-bottom: 75px;
+  letter-spacing: 2px;
+  line-height: 21px;
+  display: flex;
+  width: 100%;
+}
+
+#conts {
+  padding-bottom: 30px;
+
+}
+
+/*--formulario--*/
+.form {
+  background: linear-gradient(180deg, #bdc3c7, #304352);
+  padding: 15px;
+  border-radius: 15px;
+  width: 100%;
+}
+
+.input-box {
+  position: relative;
+}
+
+.input-user {
+  background: none;
+  border: none;
+  border-bottom: 1px solid white;
+  outline: none;
+  color: white;
+  font-size: 15px;
+  width: 100%;
+  letter-spacing: 2px;
+}
+
+.label {
+  position: absolute;
+  top: 0px;
+  left: 0px;
+  pointer-events: none;
+  transition: .5s;
+  color: white;
+}
+
+.input-user:focus~.label,
+.input-user:valid~.label {
+  top: -20px;
+  font-size: 12px;
+  color: white;
+}
+
+#submit {
+  background-color: #928DAB;
+  width: 100%;
+  border: none;
+  padding: 15px;
+  color: white;
+  font-size: 15px;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+#submit:hover {
+  /*trocar a cor do botão nd passar o cursor*/
+  background-color: #6b6b83;
+}
+
+
+/*--responsividade--*/
+
+@media only screen and (max-width: 4801px) {
+  #cabecalho {
+    width: 100%;
+  }
+}
